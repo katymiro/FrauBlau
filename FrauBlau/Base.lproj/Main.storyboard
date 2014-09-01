@@ -133,6 +133,9 @@
                                 <rect key="frame" x="42" y="177" width="138" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ufv-OF-3Qk" id="1wU-wB-B4n"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -149,6 +152,7 @@
                         <outlet property="homeButton" destination="HGN-nd-6wf" id="uM3-4U-9A1"/>
                         <outlet property="infoButton" destination="YQ2-Tr-KrM" id="JOn-g0-JBJ"/>
                         <outlet property="loginView" destination="8lO-7U-FfU" id="yr8-GG-z55"/>
+                        <outlet property="mainImage" destination="Ldh-dQ-uIg" id="eDz-gl-lEo"/>
                         <outlet property="shareButton" destination="BWQ-rw-gjc" id="kTX-Ek-bFv"/>
                         <outlet property="shareView" destination="xw3-xc-hRf" id="2y3-fH-o8u"/>
                         <outlet property="tagButton" destination="JrT-9K-7Ab" id="7No-bA-pHe"/>

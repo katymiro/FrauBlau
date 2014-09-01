@@ -13,17 +13,18 @@
 
 
 @interface ItemViewController : UIViewController <FBLoginViewDelegate>
+
 {
     SLComposeViewController *mySLComposeSheet;
 
+    __weak IBOutlet UIImageView *mainImage;
+
 }
+
+
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
-
-
 @property (weak, nonatomic) IBOutlet UIButton *PostToFacebbok;
 - (IBAction)PostToFacebookPressed:(id)sender;
-
-
 
 
 
