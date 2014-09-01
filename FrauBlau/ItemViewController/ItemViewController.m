@@ -26,14 +26,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _shareView.alpha=0.0;
-    self.loginView.readPermissions=@[@"public_profile", @"email", @"user_friends"];
-
+    _shareView.alpha = 0.0;
+    self.loginView.readPermissions = @[@"public_profile", @"email", @"user_friends"];
 
     //mainImage
-    self->mainImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.walsonrockabilly.com/images/Polka_Dot_Dresses/Red_Vintage_1950s_Pinup_Polka_Dot_Swing_Dress.jpg"]]];
-
-   
+    NSLog(@"Before");
+    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSessionDataTask *task = [session
+      dataTaskWithURL:[NSURL URLWithString: @"http://www.walsonrockabilly.com/images/Polka_Dot_Dresses/Red_Vintage_1950s_Pinup_Polka_Dot_Swing_Dress.jpg"]
+      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                            NSLog(@"Got response %@ with error %@.\n", response, error);
+          self.mainImage.image = [UIImage imageWithData:data];
+          NSLog(@"After");
+      }];
+    [task resume];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,18 +48,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
     NSLog(@"user - %@", user.name);
     
 }
 
-
 -(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
 {
     NSLog(@"You are logged in");
     
 }
+
 -(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
 {
     NSLog(@"You are logged out");
@@ -76,17 +84,6 @@
         _shareView.alpha=0.5;
         
     }];
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 - (IBAction)FacebookButtonPressed:(id)sender {
@@ -95,45 +92,36 @@
 -(IBAction)PostToFacebook:(id)sender;
 
 {
-    
-    
-    
     mySLComposeSheet= [[SLComposeViewController alloc]init];
     mySLComposeSheet= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
     [mySLComposeSheet setInitialText:@"I'm in love with this dress!!!"];
     [self presentViewController:mySLComposeSheet animated:YES completion:NULL];
-    
-    
-    
 }
 
-
-
-    - (IBAction)favoriteButtonPressed:(id)sender{
-        
-    
+- (IBAction)favoriteButtonPressed:(id)sender{
     NSLog(@"katy pressed favoriteButtonPressed");
     self.favoriteButton.backgroundColor=[UIColor yellowColor];
 }
+
 - (IBAction)tagbuttonPressed:(id)sender {
     NSLog(@"katy pressed tagButton");
     self.tagButton.backgroundColor=[UIColor yellowColor];
     
 }
+
 - (IBAction)infoButtonPressed:(id)sender {
     NSLog(@"katy pressed infoButton");
     self.infoButton.hidden = YES;//backgroundColor=[UIColor yellowColor];
 }
+
 - (IBAction)galleryButtonPressed:(id)sender {
     NSLog(@"katy pressed galleryButton");
     self.galleryButton.backgroundColor=[UIColor yellowColor];
 }
+
 - (IBAction)homeButtonPressed:(id)sender {
     NSLog(@"katy pressed homeButton");
     self.homeButton.backgroundColor=[UIColor yellowColor];
-
-
-   
 }
     
 - (IBAction)PostToFacebookPressed:(id)sender {
@@ -185,18 +173,7 @@
                                                           }
                                                       }
                                                   }];
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
-    
     
 //    mySLComposeSheet= [[SLComposeViewController alloc]init];
 //    mySLComposeSheet= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
@@ -218,10 +195,4 @@
     return params;
 }
 
-
-
-
-
-     
 @end
-

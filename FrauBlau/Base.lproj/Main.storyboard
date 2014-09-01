@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Hallhuber" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-dQ-uIg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-dQ-uIg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -140,8 +140,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ldh-dQ-uIg" firstAttribute="top" secondItem="4T7-EZ-Sv2" secondAttribute="top" id="M78-uw-qBN"/>
                             <constraint firstAttribute="bottom" secondItem="Ldh-dQ-uIg" secondAttribute="bottom" constant="-97" id="QpE-TW-CLb"/>
                             <constraint firstItem="Ldh-dQ-uIg" firstAttribute="top" secondItem="4T7-EZ-Sv2" secondAttribute="top" id="SAy-eO-3aC"/>
+                            <constraint firstItem="Gqd-zF-OYX" firstAttribute="top" secondItem="Ldh-dQ-uIg" secondAttribute="bottom" id="odu-UG-FL1"/>
+                            <constraint firstItem="Ldh-dQ-uIg" firstAttribute="leading" secondItem="4T7-EZ-Sv2" secondAttribute="leading" id="paG-mK-2Jw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ldh-dQ-uIg" secondAttribute="trailing" id="qMp-T2-QKU"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="323" height="568"/>
@@ -166,7 +170,6 @@
     <resources>
         <image name="Facebook" width="88" height="94"/>
         <image name="GooglePlus" width="92" height="94"/>
-        <image name="Hallhuber" width="595" height="446"/>
         <image name="Info" width="64" height="74"/>
         <image name="Pinterest" width="84" height="94"/>
         <image name="Twitter" width="92" height="88"/>

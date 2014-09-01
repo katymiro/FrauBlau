@@ -12,46 +12,27 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 
-@interface ItemViewController : UIViewController <FBLoginViewDelegate>
-
-{
+@interface ItemViewController : UIViewController <FBLoginViewDelegate> {
     SLComposeViewController *mySLComposeSheet;
-
-    __weak IBOutlet UIImageView *mainImage;
-
 }
 
-
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
 @property (weak, nonatomic) IBOutlet UIButton *PostToFacebbok;
-- (IBAction)PostToFacebookPressed:(id)sender;
-
-
-
-
-
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
-- (IBAction)shareButtonPressed:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
-- (IBAction)favoriteButtonPressed:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *tagButton;
-- (IBAction)tagbuttonPressed:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
-- (IBAction)infoButtonPressed:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *galleryButton;
-- (IBAction)galleryButtonPressed:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
-- (IBAction)homeButtonPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *shareView;
 
-
-
-
-
+- (IBAction)PostToFacebookPressed:(id)sender;
+- (IBAction)shareButtonPressed:(id)sender;
+- (IBAction)favoriteButtonPressed:(id)sender;
+- (IBAction)tagbuttonPressed:(id)sender;
+- (IBAction)infoButtonPressed:(id)sender;
+- (IBAction)galleryButtonPressed:(id)sender;
+- (IBAction)homeButtonPressed:(id)sender;
 
 @end
