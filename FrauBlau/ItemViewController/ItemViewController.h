@@ -12,7 +12,10 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 
-@interface ItemViewController : UIViewController <FBLoginViewDelegate> {
+@interface ItemViewController : UIViewController <FBLoginViewDelegate>
+
+
+{
     SLComposeViewController *mySLComposeSheet;
 }
 

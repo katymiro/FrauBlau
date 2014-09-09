@@ -26,6 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     _shareView.alpha = 0.0;
     self.loginView.readPermissions = @[@"public_profile", @"email", @"user_friends"];
 
@@ -193,6 +196,9 @@
         params[kv[0]] = val;
     }
     return params;
+
+
+    
 }
 
 @end

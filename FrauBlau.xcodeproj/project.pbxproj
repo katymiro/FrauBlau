@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A19C16F1991F43D0028F70C /* Image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A19C16E1991F43D0028F70C /* Image1.jpeg */; };
-		4A19C1711991F4460028F70C /* Image2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A19C1701991F4460028F70C /* Image2.jpeg */; };
 		4A99EE7819A9F36800DD5D59 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A99EE7719A9F36800DD5D59 /* Accounts.framework */; };
 		4A99EE7A19A9F37300DD5D59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A99EE7919A9F37300DD5D59 /* Social.framework */; };
 		4A9BEEAD19A348A60007024A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9BEEAC19A348A60007024A /* FacebookSDK.framework */; };
@@ -26,6 +24,7 @@
 		4AAD06371990C405001D1A47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD06351990C405001D1A47 /* InfoPlist.strings */; };
 		4AAD06391990C405001D1A47 /* FrauBlauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD06381990C405001D1A47 /* FrauBlauTests.m */; };
 		4AB0F0A01997E59100303E41 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0F09F1997E59100303E41 /* ItemViewController.m */; };
+		4AD76CCA19BCDB65006F2802 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A19C16E1991F43D0028F70C /* Image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image1.jpeg; sourceTree = "<group>"; };
-		4A19C1701991F4460028F70C /* Image2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image2.jpeg; sourceTree = "<group>"; };
 		4A99EE7719A9F36800DD5D59 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4A99EE7919A9F37300DD5D59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4A9BEEAC19A348A60007024A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -63,6 +60,7 @@
 		4AAD06381990C405001D1A47 /* FrauBlauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrauBlauTests.m; sourceTree = "<group>"; };
 		4AB0F09E1997E59100303E41 /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemViewController.h; path = ItemViewController/ItemViewController.h; sourceTree = "<group>"; };
 		4AB0F09F1997E59100303E41 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemViewController.m; path = ItemViewController/ItemViewController.m; sourceTree = "<group>"; };
+		4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +93,11 @@
 		4AAD06011990C405001D1A47 = {
 			isa = PBXGroup;
 			children = (
+				4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */,
 				4AAD06131990C405001D1A47 /* FrauBlau */,
 				4AAD06321990C405001D1A47 /* FrauBlauTests */,
 				4AAD060C1990C405001D1A47 /* Frameworks */,
 				4AAD060B1990C405001D1A47 /* Products */,
-				4A19C16E1991F43D0028F70C /* Image1.jpeg */,
-				4A19C1701991F4460028F70C /* Image2.jpeg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,11 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD76CCA19BCDB65006F2802 /* Default-568h@2x.png in Resources */,
 				4AAD06261990C405001D1A47 /* Images.xcassets in Resources */,
-				4A19C1711991F4460028F70C /* Image2.jpeg in Resources */,
 				4AAD06181990C405001D1A47 /* InfoPlist.strings in Resources */,
 				4AAD06211990C405001D1A47 /* Main.storyboard in Resources */,
-				4A19C16F1991F43D0028F70C /* Image1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +399,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/katy/Documents/FacebookSDK,
@@ -412,6 +407,7 @@
 				GCC_PREFIX_HEADER = "FrauBlau/FrauBlau-Prefix.pch";
 				INFOPLIST_FILE = "FrauBlau/FrauBlau-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -420,7 +416,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/katy/Documents/FacebookSDK,
@@ -429,6 +424,7 @@
 				GCC_PREFIX_HEADER = "FrauBlau/FrauBlau-Prefix.pch";
 				INFOPLIST_FILE = "FrauBlau/FrauBlau-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
