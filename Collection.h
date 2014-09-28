@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Collections : NSObject
+@interface Collection : NSObject
 @property (nonatomic, strong) NSString *collectionTitle;
 @property (nonatomic, strong) NSString *collectionSubtitle;
 
+-(void)parseResponse : (NSDictionary *)JSONString;
 @end

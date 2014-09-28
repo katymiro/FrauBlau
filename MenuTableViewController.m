@@ -8,9 +8,11 @@
 
 #import "MenuTableViewController.h"
 #import "MenuTableViewCell.h"
+#import "Collection.h"
 
 @interface MenuTableViewController ()
 
+@property (nonatomic, strong) NSMutableArray *marrAllCollections;
 @end
 
 @implementation MenuTableViewController
@@ -28,12 +30,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
-
+    self.marrAllCollections = [[NSMutableArray alloc]init];
+    
+    [self parseJSONFile];
     
 }
 
-   
+   -(void)parseJSONFile
+{
+    
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Collections" ofType:@"json"]];
+    NSDictionary *dictTemp = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    NSArray *arrCollections = [dictTemp valueForKey:@"Collections"];
+    
+    for (int i=0; i<arrCollections.count; i++) {
+        Collection *collections = [[Collection alloc]init];
+        [collections parseResponse:[arrCollections objectAtIndex:i]];
+        [self.marrAllCollections addObject:collections];
+    }
+    
+    [self.tableView reloadData];
+    
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -70,7 +89,7 @@
     
     
     // Configure the cell...
-    int row = [indexPath row];
+    NSInteger row = indexPath.row;
     cell.collectionTitleLabel.text = _collectionTitle [row];
     cell.collectionSubtitleLabel.text = _collectionSubtitle [row];
     
