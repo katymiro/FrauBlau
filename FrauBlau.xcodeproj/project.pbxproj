@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0E027C19C5FA5600FFE9DB /* Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E027B19C5FA5600FFE9DB /* Collections.m */; };
+		4A92C01119D835E800531DBA /* Collections.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92C01019D835E800531DBA /* Collections.json */; };
+		4A92C01519D83A0300531DBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A92C01419D83A0300531DBA /* Default-568h@2x.png */; };
 		4A99EE7819A9F36800DD5D59 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A99EE7719A9F36800DD5D59 /* Accounts.framework */; };
 		4A99EE7A19A9F37300DD5D59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A99EE7919A9F37300DD5D59 /* Social.framework */; };
 		4A9BEEAD19A348A60007024A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9BEEAC19A348A60007024A /* FacebookSDK.framework */; };
@@ -24,7 +27,9 @@
 		4AAD06371990C405001D1A47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD06351990C405001D1A47 /* InfoPlist.strings */; };
 		4AAD06391990C405001D1A47 /* FrauBlauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD06381990C405001D1A47 /* FrauBlauTests.m */; };
 		4AB0F0A01997E59100303E41 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0F09F1997E59100303E41 /* ItemViewController.m */; };
-		4AD76CCA19BCDB65006F2802 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */; };
+		4ACA2EA219CB29FD00C42865 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA2EA019CB29FD00C42865 /* Model.xcdatamodeld */; };
+		4ADF63F319C1D61100AE3E76 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF63F219C1D61100AE3E76 /* MenuTableViewController.m */; };
+		4ADF63F619C1D74000AE3E76 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF63F519C1D74000AE3E76 /* MenuTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0E027A19C5FA5600FFE9DB /* Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collections.h; sourceTree = "<group>"; };
+		4A0E027B19C5FA5600FFE9DB /* Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collections.m; sourceTree = "<group>"; };
+		4A92C01019D835E800531DBA /* Collections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Collections.json; path = ../Collections.json; sourceTree = "<group>"; };
+		4A92C01419D83A0300531DBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 		4A99EE7719A9F36800DD5D59 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4A99EE7919A9F37300DD5D59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4A9BEEAC19A348A60007024A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -60,7 +69,11 @@
 		4AAD06381990C405001D1A47 /* FrauBlauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrauBlauTests.m; sourceTree = "<group>"; };
 		4AB0F09E1997E59100303E41 /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemViewController.h; path = ItemViewController/ItemViewController.h; sourceTree = "<group>"; };
 		4AB0F09F1997E59100303E41 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemViewController.m; path = ItemViewController/ItemViewController.m; sourceTree = "<group>"; };
-		4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		4ACA2EA119CB29FD00C42865 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4ADF63F119C1D61100AE3E76 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		4ADF63F219C1D61100AE3E76 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		4ADF63F419C1D74000AE3E76 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		4ADF63F519C1D74000AE3E76 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +103,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0E027919C5F98A00FFE9DB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4ADF63F419C1D74000AE3E76 /* MenuTableViewCell.h */,
+				4ADF63F519C1D74000AE3E76 /* MenuTableViewCell.m */,
+				4ADF63F119C1D61100AE3E76 /* MenuTableViewController.h */,
+				4ADF63F219C1D61100AE3E76 /* MenuTableViewController.m */,
+				4A92C01419D83A0300531DBA /* Default-568h@2x.png */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		4A0E027D19C5FCFA00FFE9DB /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E027A19C5FA5600FFE9DB /* Collections.h */,
+				4A0E027B19C5FA5600FFE9DB /* Collections.m */,
+				4A92C01019D835E800531DBA /* Collections.json */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
 		4AAD06011990C405001D1A47 = {
 			isa = PBXGroup;
 			children = (
-				4AD76CC919BCDB65006F2802 /* Default-568h@2x.png */,
+				4ACA2EA019CB29FD00C42865 /* Model.xcdatamodeld */,
+				4A0E027D19C5FCFA00FFE9DB /* Collections */,
+				4A0E027919C5F98A00FFE9DB /* Menu */,
 				4AAD06131990C405001D1A47 /* FrauBlau */,
 				4AAD06321990C405001D1A47 /* FrauBlauTests */,
 				4AAD060C1990C405001D1A47 /* Frameworks */,
@@ -251,10 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD76CCA19BCDB65006F2802 /* Default-568h@2x.png in Resources */,
+				4A92C01119D835E800531DBA /* Collections.json in Resources */,
 				4AAD06261990C405001D1A47 /* Images.xcassets in Resources */,
 				4AAD06181990C405001D1A47 /* InfoPlist.strings in Resources */,
 				4AAD06211990C405001D1A47 /* Main.storyboard in Resources */,
+				4A92C01519D83A0300531DBA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADF63F319C1D61100AE3E76 /* MenuTableViewController.m in Sources */,
+				4A0E027C19C5FA5600FFE9DB /* Collections.m in Sources */,
 				4AAD061E1990C405001D1A47 /* AppDelegate.m in Sources */,
+				4ACA2EA219CB29FD00C42865 /* Model.xcdatamodeld in Sources */,
+				4ADF63F619C1D74000AE3E76 /* MenuTableViewCell.m in Sources */,
 				4AB0F0A01997E59100303E41 /* ItemViewController.m in Sources */,
 				4AAD061A1990C405001D1A47 /* main.m in Sources */,
 			);
@@ -500,6 +542,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4ACA2EA019CB29FD00C42865 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4ACA2EA119CB29FD00C42865 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4ACA2EA119CB29FD00C42865 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4AAD06021990C405001D1A47 /* Project object */;
 }
