@@ -11,6 +11,7 @@
 @interface Collection : NSObject
 @property (nonatomic, strong) NSString *collectionTitle;
 @property (nonatomic, strong) NSString *collectionSubtitle;
+//@property (nonatomic,strong)  UIImageView  *collectionImage;
 
 -(void)parseResponse : (NSDictionary *)JSONString;
 @end

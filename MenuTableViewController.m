@@ -76,7 +76,7 @@
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
    
-    return _collectionTitle.count;
+    return [self.marrAllCollections count];
 }
 
 
@@ -89,9 +89,10 @@
     
     
     // Configure the cell...
-    NSInteger row = indexPath.row;
-    cell.collectionTitleLabel.text = _collectionTitle [row];
-    cell.collectionSubtitleLabel.text = _collectionSubtitle [row];
+    Collection* collection = [self.marrAllCollections objectAtIndex:indexPath.row];
+    cell.collectionTitleLabel.text = collection.collectionTitle;
+    cell.collectionSubtitleLabel.text = collection.collectionSubtitle;
+    
     
     return cell;
 }

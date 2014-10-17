@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *collectionTitleLabel;
 @property (nonatomic, strong) IBOutlet UILabel *collectionSubtitleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *collectionImage;
 
 @end

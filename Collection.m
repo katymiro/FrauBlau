@@ -14,6 +14,11 @@
 {
     self.collectionTitle = [JSONString objectForKey:@"collectionTitle"];
     self.collectionSubtitle = [JSONString objectForKey:@"collectionSubtitle"];
+//    self.collectionImage = [JSONString objectForKey:@"collectionImage"];
+}
+
+-(NSString *)description{
+        return [NSString stringWithFormat:@"Collection %@, %@ ",self.collectionTitle,self.collectionSubtitle];
 }
 
 @end

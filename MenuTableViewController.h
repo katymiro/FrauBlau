@@ -11,5 +11,6 @@
 @interface MenuTableViewController : UITableViewController
 @property ( nonatomic,strong) NSArray *collectionTitle;
 @property (nonatomic, strong) NSArray *collectionSubtitle;
+@property (nonatomic,strong)  NSArray *collectionImage;
 
 @end
